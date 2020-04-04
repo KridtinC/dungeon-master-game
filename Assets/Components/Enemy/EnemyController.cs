@@ -10,9 +10,9 @@ public class EnemyController : MonoBehaviour
     public float attack;
     private bool isCollide;
 
-    protected float maxHp = 150;
+    protected float maxHp = 30;
     protected float initAttack = 3;
-    protected float speed = 3;
+    protected float speed = 1.5f;
     protected float stepBack = 1.5f;
     
     // Start is called before the first frame update
@@ -39,22 +39,22 @@ public class EnemyController : MonoBehaviour
     private void Follow()
     {
         Vector3 playerPos = player.transform.position;
-        Vector3 predatorPos = transform.position;
+        Vector3 enemyPos = transform.position;
 
-        float deltaX = (playerPos - predatorPos).x;
-        float deltaZ = (playerPos - predatorPos).z;
+        float deltaX = (playerPos - enemyPos).x;
+        float deltaZ = (playerPos - enemyPos).z;
 
         if (deltaX != 0)
         {
-            predatorPos += (deltaX / Math.Abs(deltaX)) * Vector3.right * Time.deltaTime * speed;
+            enemyPos += (deltaX / Math.Abs(deltaX)) * Vector3.right * Time.deltaTime * speed;
         }
 
         if (deltaZ != 0)
         {
-            predatorPos += (deltaZ / Math.Abs(deltaZ)) * Vector3.forward * Time.deltaTime * speed;
+            enemyPos += (deltaZ / Math.Abs(deltaZ)) * Vector3.forward * Time.deltaTime * speed;
         }
 
-        transform.position = predatorPos;
+        transform.position = enemyPos;
 
     }
 
@@ -66,12 +66,12 @@ public class EnemyController : MonoBehaviour
             player.OnAttack(attack);
 
             Vector3 playerPos = player.transform.position;
-            Vector3 predatorPos = transform.position;
+            Vector3 enemyPos = transform.position;
 
-            float deltaX = (playerPos - predatorPos).x;
-            float deltaZ = (playerPos - predatorPos).z;
+            float deltaX = (playerPos - enemyPos).x;
+            float deltaZ = (playerPos - enemyPos).z;
             Vector3 direction = new Vector3(-deltaX, 0, -deltaZ);
-            if (Vector3.Distance(playerPos, predatorPos) < stepBack)
+            if (Vector3.Distance(playerPos, enemyPos) < stepBack)
             {
                 direction.Normalize();
                 transform.position += (direction * stepBack);

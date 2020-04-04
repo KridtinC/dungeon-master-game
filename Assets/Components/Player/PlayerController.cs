@@ -8,8 +8,9 @@ public class PlayerController : MonoBehaviour
 
     public GameObject camera_obj;
 
-    public float hp;
-    public float attack;
+    private float hp;
+    private float attack;
+    private float money;
 
     protected float maxHp = 100;
     protected float initAttack = 1;
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         hp = maxHp;
         attack = initAttack;
+        money = 0;
     }
 
     // Update is called once per frame
@@ -76,15 +78,18 @@ public class PlayerController : MonoBehaviour
         hp = Mathf.Max(0, hp - damage);
     }
 
-    //public void OnPickUpItem(ItemController item)
-    //{
-    //    if (item is WeaponController)
-    //    {
-    //        print('yes is weapon');
-    //    }
-    //    //attack += item.GetAttack();
-    //    //attackRange = Mathf.Max(attackRange, item.GetRange());
-    //}
+    public void OnPickUpItem(ItemController item)
+    {
+        if (item is WeaponController)
+        {
+            attack += ((WeaponController) item).GetAttack();
+            attackRange = Mathf.Max(attackRange, ((WeaponController)item).GetRange());
+        }
+        else if (item is CoinController)
+        {
+            money += ((CoinController) item).GetValue();
+        }
+    }
 
     public float GetHP()
     {
@@ -94,5 +99,10 @@ public class PlayerController : MonoBehaviour
     public float GetAttack()
     {
         return attack;
+    }
+
+    public float GetMoney()
+    {
+        return money;
     }
 }
