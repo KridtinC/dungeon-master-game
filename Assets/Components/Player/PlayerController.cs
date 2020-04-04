@@ -96,6 +96,11 @@ public class PlayerController : MonoBehaviour
         return hp;
     }
 
+    public float GetMaxHP()
+    {
+        return maxHp;
+    }
+
     public float GetAttack()
     {
         return attack;
