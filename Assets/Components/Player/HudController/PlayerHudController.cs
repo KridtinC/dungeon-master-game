@@ -14,12 +14,18 @@ public class PlayerHudController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float hp = player.GetHP();
-        float maxHp = player.GetMaxHP();
-        healthBar.value = hp;
+        UpdateHealthBar();
         attack.text = player.GetAttack().ToString();
         money.text = player.GetMoney().ToString();
 
+        
+    }
+
+    private void UpdateHealthBar()
+    {
+        float hp = player.GetHP();
+        float maxHp = player.GetMaxHP();
+        healthBar.value = hp;
         if (maxHp / 4 < hp && hp <= maxHp / 2)
         {
             health.color = Color.yellow;
