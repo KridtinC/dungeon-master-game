@@ -6,25 +6,21 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public PlayerController player;
-    public float hp;
-    public float attack;
+    public float hp = 30;
+    public float attack = 3;
     private bool isCollide;
 
-    protected float maxHp = 30;
-    protected float initAttack = 3;
     protected float speed = 1.5f;
     protected float stepBack = 1.5f;
     
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
-        hp = maxHp;
-        attack = initAttack;
         isCollide = false;
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if (!isCollide)
         {
@@ -36,7 +32,7 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void Follow()
+    protected void Follow()
     {
         Vector3 playerPos = player.transform.position;
         Vector3 enemyPos = transform.position;

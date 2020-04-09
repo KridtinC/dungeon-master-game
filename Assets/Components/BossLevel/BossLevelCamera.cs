@@ -5,23 +5,31 @@ using UnityEngine;
 public class BossLevelCamera : MonoBehaviour
 {
     public PlayerController Player;
-    public EnemyController Boss;
+    public BossController Boss;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private Vector3 position;
+
+    void Start() {
+        Update();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = Boss.transform.position - Player.transform.position;
+        if (!Boss.OnTop()) {
+            position = Player.transform.position;
+        }
+        Vector3 direction = Boss.transform.position - position;
         direction.y = 0;
 
-        direction *= Mathf.Max(12, direction.magnitude) / direction.magnitude;
+        float length = Mathf.Clamp(direction.magnitude, 12, 30);
+        float singleStep = 3 * Time.deltaTime;
+        direction = Vector3.RotateTowards(transform.forward, direction, singleStep, 0.0f);
 
-        transform.position = Boss.transform.position - 2*direction;
-        transform.rotation = Quaternion.LookRotation(direction, Vector3.up);
+        Vector3 newPosition = Boss.transform.position - 2f * direction * length;
+        newPosition.y = Player.transform.position.y + 3;
+
+        transform.position = newPosition;
+        transform.rotation = Quaternion.LookRotation(direction);
     }
 }
