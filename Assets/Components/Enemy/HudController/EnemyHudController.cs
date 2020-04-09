@@ -8,7 +8,7 @@ public class EnemyHudController : MonoBehaviour
     public Slider healthBar;
     public EnemyController enemy;
 
-    private Vector3 offset = new Vector3(0, 1, 0);
+    public Vector3 offset = new Vector3(0, 1, 0);
     private bool active = true;
 
     // Update is called once per frame

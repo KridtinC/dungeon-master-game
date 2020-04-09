@@ -34,22 +34,31 @@ public class PlayerController : MonoBehaviour
     private void Move()
     {
         Vector3 position = transform.position;
+        Vector3 direction = (camera_obj)
+            ? position - camera_obj.transform.position
+            : Vector3.forward;
+        direction.y = 0;
+        direction = Vector3.Normalize(direction);
+
 
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
-            position += Vector3.forward * speed * Time.deltaTime;
+            position += direction * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
-            position += Vector3.back * speed * Time.deltaTime;
+            Vector3 backDirection = Quaternion.AngleAxis(180, Vector3.up) * direction;
+            position += backDirection * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            position += Vector3.left * speed * Time.deltaTime;
+            Vector3 leftDirection = Quaternion.AngleAxis(-90, Vector3.up) * direction;
+            position += leftDirection * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
-            position += Vector3.right * speed * Time.deltaTime;
+            Vector3 rightDirection = Quaternion.AngleAxis(90, Vector3.up) * direction;
+            position += rightDirection * speed * Time.deltaTime;
         }
 
         transform.position = position;
