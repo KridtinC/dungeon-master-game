@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class BossController : EnemyController
 {
-    public Rigidbody rb;
+    public EnemyController enemyObject;
+    public GameObject bombObject;
+    protected EnemyController[] enemyObjs;
+    protected int enemyCount = 5;
+    protected int deadCount = 0;
 
     private float defaultY;
 
     protected override void Start() {
+        enemyObjs = new EnemyController[enemyCount];
+        enemyObject.gameObject.SetActive(false);
+        bombObject.gameObject.SetActive(false);
         defaultY = transform.position.y;
         base.Start();
     }
@@ -25,7 +32,34 @@ public class BossController : EnemyController
         if (hp <= 0) {
             Destroy(gameObject);
         }
-        if (Inside()) {
+
+        for (int i = 0; i < enemyCount; ++i) {
+            if (enemyObjs[i] == null) {
+                EnemyController newEnemy = Instantiate(enemyObject);
+                newEnemy.gameObject.SetActive(true);
+                newEnemy.transform.position = transform.position;
+                newEnemy.rb.useGravity = true;
+
+                // Add force
+                Vector3 rotation = Quaternion.AngleAxis(Random.Range(0, 360f), Vector3.up) * Vector3.forward;
+                Vector3 forceVec = Quaternion.AngleAxis(Random.Range(-15f, 15f), rotation) * Vector3.up;
+                newEnemy.rb.AddForce(20 * forceVec, ForceMode.Impulse);
+
+                enemyObjs[i] = newEnemy;
+                break;
+            } else if (enemyObjs[i].GetHP() <= 0) {
+                deadCount += 1;
+                if (deadCount % 5 == 0) {
+                    GameObject bomb = Instantiate(bombObject);
+                    bomb.gameObject.SetActive(true);
+                    bomb.transform.position = enemyObjs[i].transform.position;
+                }
+                Destroy(enemyObjs[i]);
+                enemyObjs[i] = null;
+            }
+        }
+
+        if (Inside(player.gameObject)) {
             if (!IsInside) {
                 player.OnAttack(player.GetMaxHP() / 3);
             }
@@ -38,7 +72,7 @@ public class BossController : EnemyController
     protected int IsStamping = 0;
     protected void checkPosition() {
         if (IsStamping == 0) {
-            if (OnTop()) {
+            if (OnTop(player.gameObject)) {
                 IsStamping = 1;
                 return;
             }
@@ -47,6 +81,14 @@ public class BossController : EnemyController
             if (TouchFloor()) {
                 rb.velocity = Vector3.zero;
                 IsStamping = 2;
+
+                // Check if damage
+                foreach (GameObject bomb in GameObject.FindGameObjectsWithTag("Bomb")) {
+                    if (bomb.gameObject.activeSelf && OnTop(bomb.gameObject)) {
+                        OnAttack(10);
+                        Destroy(bomb);
+                    }
+                }
             } else {
                 rb.AddForce(-transform.up * 50);
             }
@@ -54,7 +96,7 @@ public class BossController : EnemyController
         } else if (IsStamping == 2) {
             if (transform.position.y > defaultY) {
                 rb.velocity = Vector3.zero;
-                if (!OnTop()) {
+                if (!OnTop(player.gameObject)) {
                     IsStamping = 0;
                 }
             } else {
@@ -66,21 +108,21 @@ public class BossController : EnemyController
         Follow();
     }
 
-    public bool OnTop() {
+    public bool OnTop(GameObject obj) {
         Vector3 position = transform.position;
-        Vector3 playerPos = player.transform.position;
+        Vector3 objPos = obj.transform.position;
         Vector3 scale = GetComponent<Renderer>().bounds.size;
         return 
-            (position.x - scale.x/2 <= playerPos.x && playerPos.x <= position.x + scale.x/2)
-            && (position.z - scale.z/2 <= playerPos.z && playerPos.z <= position.z + scale.z/2);
+            (position.x - scale.x/2 <= objPos.x && objPos.x <= position.x + scale.x/2)
+            && (position.z - scale.z/2 <= objPos.z && objPos.z <= position.z + scale.z/2);
     }
 
-    public bool Inside() {
+    public bool Inside(GameObject obj) {
         Vector3 position = transform.position;
-        Vector3 playerPos = player.transform.position;
+        Vector3 objPos = obj.transform.position;
         Vector3 scale = GetComponent<Renderer>().bounds.size;
-        return OnTop() 
-            && (position.y - scale.y/2 <= playerPos.y && playerPos.y <= position.y + scale.y/2);
+        return OnTop(obj) 
+            && (position.y - scale.y/2 <= objPos.y && objPos.y <= position.y + scale.y/2);
     }
 
     protected bool TouchFloor() {

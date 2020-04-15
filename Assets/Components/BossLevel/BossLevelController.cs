@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossLevel : MonoBehaviour
+public class BossLevelController : MonoBehaviour
 {
 
     // Start is called before the first frame update

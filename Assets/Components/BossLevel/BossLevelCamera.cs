@@ -16,7 +16,7 @@ public class BossLevelCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Boss.OnTop()) {
+        if (!Boss.OnTop(Player.gameObject)) {
             position = Player.transform.position;
         }
         Vector3 direction = Boss.transform.position - position;

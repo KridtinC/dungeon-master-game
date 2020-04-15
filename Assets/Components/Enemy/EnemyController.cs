@@ -6,11 +6,12 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public PlayerController player;
+    public Rigidbody rb;
     public float hp = 30;
     public float attack = 3;
     private bool isCollide;
 
-    protected float speed = 1.5f;
+    public float speed = 1.5f;
     protected float stepBack = 1.5f;
     
     // Start is called before the first frame update
@@ -26,7 +27,11 @@ public class EnemyController : MonoBehaviour
         {
             Follow();
         }
-        if (hp == 0)
+        if (gameObject.transform.position.y < -20) {
+            // Fall out of bound
+            hp = 0;
+        }
+        if (hp <= 0)
         {
             gameObject.SetActive(false);
         }
