@@ -9,16 +9,16 @@ public class PlayerHudController : MonoBehaviour
     public Image health;
     public Text attack;
     public Text money;
+    public Text inventory;
     public PlayerController player;
 
     // Update is called once per frame
     void Update()
     {
         UpdateHealthBar();
+        UpdateInventory();
         attack.text = player.GetAttack().ToString();
         money.text = player.GetMoney().ToString();
-
-        
     }
 
     private void UpdateHealthBar()
@@ -34,5 +34,15 @@ public class PlayerHudController : MonoBehaviour
         {
             health.color = Color.red;
         }
+    }
+
+    private void UpdateInventory()
+    {
+        string inv = "";
+        foreach(ItemController item in player.GetInventory())
+        {
+            inv += "- " + item.name + "\n";
+        }
+        inventory.text = inv;
     }
 }

@@ -33,4 +33,9 @@ public class ItemController : MonoBehaviour
             GUI.TextArea(new Rect(100, 50, 200, 100), text);
         }
     }
+
+    public bool IsPickUp()
+    {
+        return pickup;
+    }
 }
