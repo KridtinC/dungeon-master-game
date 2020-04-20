@@ -12,6 +12,10 @@ public class BossController : EnemyController
 
     private float defaultY;
 
+    protected bool IsPhase1() { return true; }
+    protected bool IsPhase2() { return this.GetHP() < 66f; }
+    protected bool IsPhase3() { return this.GetHP() < 33f; }
+
     protected override void Start() {
         enemyObjs = new EnemyController[enemyCount];
         enemyObject.gameObject.SetActive(false);
@@ -25,6 +29,8 @@ public class BossController : EnemyController
     {
         checkStat();
         checkPosition();
+        if (IsPhase2()) shootBullet();
+        if (IsPhase3()) raining();
     }
 
     protected bool IsInside = false;
@@ -131,5 +137,38 @@ public class BossController : EnemyController
         Vector3 scale = GetComponent<Renderer>().bounds.size;
         Vector3 playerScale = player.GetComponent<Renderer>().bounds.size;
         return position.y - scale.y/2 < playerPos.y - playerScale.y;
+    }
+
+    public BossLevelBullet bulletObject;
+    protected float bulletTimeCount = 0;
+    protected void shootBullet() {
+        bulletTimeCount += Time.deltaTime;
+        if (bulletTimeCount > 5f) {
+            BossLevelBullet bullet = Instantiate(bulletObject);
+            bullet.gameObject.transform.position = transform.position + 10 * transform.up;
+            bullet.active = true;
+            bulletTimeCount = 0.0f;
+        }
+    }
+
+    public BossLevelRainBullet rainBulletObject;
+    protected float rainingTimeCount = 0f;
+    protected void raining() {
+        rainingTimeCount += Time.deltaTime;
+        if (rainingTimeCount > 0.3f) {
+            for (int i = 0; i < 3; ++i) {
+                BossLevelRainBullet rain = Instantiate(rainBulletObject);
+                Vector3 offset =
+                    Quaternion.AngleAxis(Random.Range(0f, 360f), gameObject.transform.up)
+                    * gameObject.transform.forward
+                    * Random.Range(0, 15);
+                rain.gameObject.transform.position = 
+                    player.gameObject.transform.position
+                    + 30 * gameObject.transform.up
+                    + offset;
+                rain.active = true;
+            }
+            rainingTimeCount = 0f;
+        }
     }
 }
