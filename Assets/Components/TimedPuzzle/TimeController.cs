@@ -11,6 +11,7 @@ public class TimeController : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+		TimeLeft.enabled = false;
 		setTimeOrigin();
 	}
 
@@ -20,10 +21,13 @@ public class TimeController : MonoBehaviour
 		timing();
 		TimeLeft.text = timeValue.ToString("f1");
 	}
+
 	private void TimeCount(){
+		TimeLeft.enabled = true;
 		timeValue -= Time.deltaTime;
 	}
 	public float TimeStop(){
+		TimeLeft.enabled = false;
 		return timeValue;
 	}
 	private void timing(){
