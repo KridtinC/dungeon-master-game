@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class PuzzleController : MonoBehaviour
 {
-	public bool completed;
+	private bool completed;
 	public TimeController time;
 	public GameObject obj;
-	private float duration = 3f;
+	private float duration = 2f;
+	private float dist;
+	private float minDist = 2f;
+	private string text = "Press 'R' to completed.";
+	public PlayerController player;
 	// Start is called before the first frame update
 	void Start()
 	{
-			
+			completed = false;
 	}
 
 	// Update is called once per frame
@@ -20,8 +24,8 @@ public class PuzzleController : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.F)){
 					// Puzzle.Activate
 			time.timeRun = true;
-			}
-		if (Input.GetKeyDown(KeyCode.R)){
+		}
+		if (dist <= minDist && Input.GetKeyDown(KeyCode.R)){
 			completed = true;
 		}
 		if(completed && time.timeValue >= 0f){
@@ -30,5 +34,15 @@ public class PuzzleController : MonoBehaviour
 				duration -= Time.deltaTime;
 			}
 		}
+		else{
+			dist = Vector3.Distance(player.transform.position, obj.transform.position);
+		}
 	}
+	void OnGUI()
+  {
+    if (dist <= minDist)
+    {
+      GUI.TextArea(new Rect(50, 100, 100, 50), text);
+    }
+  }
 }
