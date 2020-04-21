@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class TimeController : MonoBehaviour
 {
 	public Text TimeLeft;
-	public float timeValue = 60f;
+	public float timeValue;
 	public bool timeRun = false;
 	// Start is called before the first frame update
 	void Start()
 	{
-
+		setTimeOrigin();
 	}
 
 	// Update is called once per frame
@@ -20,35 +20,25 @@ public class TimeController : MonoBehaviour
 		timing();
 		TimeLeft.text = timeValue.ToString("f1");
 	}
-
-	public void TimeCount(){
+	private void TimeCount(){
 		timeValue -= Time.deltaTime;
 	}
 	public float TimeStop(){
 		return timeValue;
 	}
 	private void timing(){
-		if (Input.GetKeyDown(KeyCode.F)){
-					// Puzzle.Activate
-				timeRun = !timeRun;
-				}
 		if(timeRun){
 			TimeCount();
 			}
 		else{
 			TimeStop();
-			}
-		if(timeValue <= 0f){
-			SetTimeRun(false);
+			setTimeOrigin();
+		}
+		if(timeValue < 0f){
+			timeRun = false;
 		}
 	}
-	public bool IsTimeRun(){
-		return timeRun;
-	}
-	public void SetTimeRun(bool x){
-		timeRun = x;
-	}
-	public void addTime(float x){
-		timeValue += x;
+	public void setTimeOrigin(){
+		timeValue = 10f;
 	}
 }
