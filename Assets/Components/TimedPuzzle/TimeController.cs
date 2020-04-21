@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimeController : MonoBehaviour
 {
 	public Text TimeLeft;
-	public float time = 60f;
+	public float timeValue = 60f;
 	public bool timeRun = false;
 	// Start is called before the first frame update
 	void Start()
@@ -18,14 +18,14 @@ public class TimeController : MonoBehaviour
 	void Update()
 	{
 		timing();
-		TimeLeft.text = time.ToString("f1");
+		TimeLeft.text = timeValue.ToString("f1");
 	}
 
-	void TimeCount(){
-		time -= Time.deltaTime;
+	public void TimeCount(){
+		timeValue -= Time.deltaTime;
 	}
-	float TimeStop(){
-		return time;
+	public float TimeStop(){
+		return timeValue;
 	}
 	private void timing(){
 		if (Input.GetKeyDown(KeyCode.F)){
@@ -38,5 +38,17 @@ public class TimeController : MonoBehaviour
 		else{
 			TimeStop();
 			}
+		if(timeValue <= 0f){
+			SetTimeRun(false);
+		}
+	}
+	public bool IsTimeRun(){
+		return timeRun;
+	}
+	public void SetTimeRun(bool x){
+		timeRun = x;
+	}
+	public void addTime(float x){
+		timeValue += x;
 	}
 }
