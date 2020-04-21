@@ -1037,11 +1037,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 819401265}
   rb: {fileID: 617672581}
-  hp: 100
+  hp: 50
   attack: 15
   speed: 1.5
   enemyObject: {fileID: 409093109}
   bombObject: {fileID: 1350409106}
+  material: {fileID: 2100000, guid: 6138fa59b1c111441a8dd60ba3873709, type: 2}
   bulletObject: {fileID: 975638897}
   rainBulletObject: {fileID: 1530374363}
 --- !u!54 &617672581

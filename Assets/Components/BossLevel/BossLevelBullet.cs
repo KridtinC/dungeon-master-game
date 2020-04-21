@@ -8,6 +8,7 @@ public class BossLevelBullet : MonoBehaviour
     public bool active = false;
 
     protected Vector3 direction;
+    protected virtual float getUnitAttack() { return 10; }
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +31,15 @@ public class BossLevelBullet : MonoBehaviour
         if (!active) return;
         PlayerController player = collision.gameObject.GetComponent<PlayerController>();
         if (player) {
-            player.OnAttack(10);
+            player.OnAttack(this.getUnitAttack());
             Destroy(this.gameObject);
+        }
+        EnemyController enemy = collision.gameObject.GetComponent<EnemyController>();
+        if (enemy) {
+            enemy.OnAttack(this.getUnitAttack());
+            if (enemy.GetHP() <= 0) {
+                Destroy(enemy.gameObject);
+            }
         }
     }
 
