@@ -6,6 +6,7 @@ public class BossController : EnemyController
 {
     public EnemyController enemyObject;
     public GameObject bombObject;
+    public Material material;
     protected EnemyController[] enemyObjs;
     protected int enemyCount = 5;
     protected int deadCount = 0;
@@ -15,6 +16,7 @@ public class BossController : EnemyController
     protected bool IsPhase1() { return true; }
     protected bool IsPhase2() { return this.GetHP() < 66f; }
     protected bool IsPhase3() { return this.GetHP() < 33f; }
+    protected Gradient gradient = new Gradient();
 
     protected override void Start() {
         enemyObjs = new EnemyController[enemyCount];
@@ -22,6 +24,21 @@ public class BossController : EnemyController
         bombObject.gameObject.SetActive(false);
         defaultY = transform.position.y;
         base.Start();
+
+        GradientColorKey[] colorKey = new GradientColorKey[2];
+        colorKey[0].color = Color.red;
+        colorKey[0].time = 0.0f;
+        colorKey[1].color = Color.black;
+        colorKey[1].time = bulletShootTime;
+
+        GradientAlphaKey[] alphaKey = new GradientAlphaKey[2];
+        alphaKey[0].alpha = 1.0f;
+        alphaKey[0].time = 0.0f;
+        alphaKey[1].alpha = 1.0f;
+        alphaKey[1].time = bulletShootTime;
+
+        gradient.SetKeys(colorKey, alphaKey);
+        material.SetColor("_Color", Color.red);
     }
 
     // Update is called once per frame
@@ -36,11 +53,12 @@ public class BossController : EnemyController
     protected bool IsInside = false;
     protected void checkStat() {
         if (hp <= 0) {
+            material.SetColor("_Color", Color.red);
             Destroy(gameObject);
         }
 
         for (int i = 0; i < enemyCount; ++i) {
-            if (enemyObjs[i] == null) {
+            if (enemyObjs[i] == null || enemyObjs[i].gameObject == null) {
                 EnemyController newEnemy = Instantiate(enemyObject);
                 newEnemy.gameObject.SetActive(true);
                 newEnemy.transform.position = transform.position;
@@ -62,7 +80,7 @@ public class BossController : EnemyController
                 }
                 Destroy(enemyObjs[i]);
                 enemyObjs[i] = null;
-            }
+            }         
         }
 
         if (Inside(player.gameObject)) {
@@ -141,14 +159,17 @@ public class BossController : EnemyController
 
     public BossLevelBullet bulletObject;
     protected float bulletTimeCount = 0;
+    protected float bulletShootTime = 5f;
     protected void shootBullet() {
         bulletTimeCount += Time.deltaTime;
-        if (bulletTimeCount > 5f) {
+        if (bulletTimeCount > bulletShootTime) {
             BossLevelBullet bullet = Instantiate(bulletObject);
-            bullet.gameObject.transform.position = transform.position + 10 * transform.up;
+            bullet.gameObject.transform.position = transform.position - 8 * transform.up;
             bullet.active = true;
             bulletTimeCount = 0.0f;
         }
+
+        material.SetColor("_Color", gradient.Evaluate(bulletTimeCount));
     }
 
     public BossLevelRainBullet rainBulletObject;
