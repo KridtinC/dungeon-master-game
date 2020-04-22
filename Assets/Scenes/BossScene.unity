@@ -1142,8 +1142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 819401265}
   rb: {fileID: 617672581}
-  hp: 1
-  attack: 15
+  hp: 100
+  attack: 10
   isFollow: 0
   speed: 1.5
   enemyObject: {fileID: 409093109}
@@ -1585,7 +1585,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &819401268
 BoxCollider:

@@ -15,6 +15,9 @@ public class BossLevelController : MonoBehaviour
     }
 
     void Update() {
+        if (Input.GetKey(KeyCode.P)) {
+            player.RefillHP();
+        }
         if (boss != null && player != null) {
             if (player.GetHP() <= 0) {
                 reload();
@@ -40,7 +43,6 @@ public class BossLevelController : MonoBehaviour
 
         alpha += fadeDir * fadeSpeed * Time.deltaTime;
         alpha = Mathf.Clamp01(alpha);
-        Debug.Log(alpha);
 
         Color color = new Color (255, 255, 255, alpha);
         Texture2D texture = new Texture2D(1, 1);

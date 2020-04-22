@@ -139,4 +139,8 @@ public class PlayerController : MonoBehaviour
     {
         return inventory;
     }
+
+    public void RefillHP() {
+        hp = GetMaxHP();
+    }
 }
