@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     protected float initAttack = 1;
     protected float speed = 5;
     protected float attackRange = 2;
+    private List<ItemController> inventory;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
         hp = maxHp;
         attack = initAttack;
         money = 0;
+        inventory = new List<ItemController>();
     }
 
     // Update is called once per frame
@@ -41,21 +43,21 @@ public class PlayerController : MonoBehaviour
         direction = Vector3.Normalize(direction);
 
 
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             position += direction * speed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             Vector3 backDirection = Quaternion.AngleAxis(180, Vector3.up) * direction;
             position += backDirection * speed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             Vector3 leftDirection = Quaternion.AngleAxis(-90, Vector3.up) * direction;
             position += leftDirection * speed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             Vector3 rightDirection = Quaternion.AngleAxis(90, Vector3.up) * direction;
             position += rightDirection * speed * Time.deltaTime;
@@ -98,6 +100,19 @@ public class PlayerController : MonoBehaviour
         {
             money += ((CoinController) item).GetValue();
         }
+        else
+        {
+            inventory.Add(item);
+        }
+    }
+
+    public void OnPlaceItem(int itemIndex, PlaceItemController placeItemArea)
+    {
+        ItemController item = Instantiate(inventory[itemIndex]);
+        item.name = inventory[itemIndex].name;
+        item.gameObject.transform.position = placeItemArea.transform.position;
+        item.gameObject.SetActive(true);
+        inventory.RemoveAt(itemIndex);
     }
 
     public float GetHP()
@@ -118,5 +133,10 @@ public class PlayerController : MonoBehaviour
     public float GetMoney()
     {
         return money;
+    }
+
+    public List<ItemController> GetInventory()
+    {
+        return inventory;
     }
 }
