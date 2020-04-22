@@ -6,13 +6,12 @@ public class CameraController : MonoBehaviour
 {
 
     public GameObject target;
-
     protected Vector3 target_camera_translation;
 
     // Start is called before the first frame update
     void Start()
     {
-        target_camera_translation = new Vector3(0, 6, -4);
+        target_camera_translation = new Vector3(0, 6, -6);
         transform.rotation = Quaternion.LookRotation(-target_camera_translation, Vector3.up);
     }
 

@@ -17,12 +17,12 @@ public class PuzzleController : MonoBehaviour{
 	}
 	// Update is called once per frame
 	void Update(){
-		if (dist <= minDist && time.timeValue >= 0f && Input.GetKeyDown(KeyCode.R)){
+		if (dist <= minDist && time.timeRun && Input.GetKeyDown(KeyCode.R)){
 			completed = true;
 		}
 		if(completed){
 			if(duration >= 0f){
-				obj.transform.position = obj.transform.position + new Vector3(0, 1f * Time.deltaTime, 0);
+				obj.transform.Translate(0, -1f * Time.deltaTime, 0);
 				duration -= Time.deltaTime;
 			}
 		}
