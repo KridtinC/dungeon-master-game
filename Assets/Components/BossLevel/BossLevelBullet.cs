@@ -9,12 +9,15 @@ public class BossLevelBullet : MonoBehaviour
 
     protected Vector3 direction;
     protected virtual float getUnitAttack() { return 10; }
+    public Vector3 getDirection() { return direction; }
 
     // Start is called before the first frame update
     void Start()
     {
-        Generate();
+        Generate(Player.gameObject);
     }
+
+    protected float Bound = 70f;
 
     // Update is called once per frame
     void Update()
@@ -22,7 +25,11 @@ public class BossLevelBullet : MonoBehaviour
         GetComponent<MeshRenderer>().enabled = active;
         if (!active) return;
         transform.position += direction * Time.deltaTime * 20f;
-        if (transform.position.y < Player.gameObject.transform.position.y - 5) {
+        if (transform.position.x < -Bound || transform.position.x > Bound) {
+            Destroy(this.gameObject);
+        } else if (transform.position.z < -Bound || transform.position.z > Bound) {
+            Destroy(this.gameObject);
+        } else if (transform.position.y < -Bound) {
             Destroy(this.gameObject);
         }
     }
@@ -37,15 +44,12 @@ public class BossLevelBullet : MonoBehaviour
         EnemyController enemy = collision.gameObject.GetComponent<EnemyController>();
         if (enemy) {
             enemy.OnAttack(this.getUnitAttack());
-            if (enemy.GetHP() <= 0) {
-                Destroy(enemy.gameObject);
-            }
         }
     }
 
-    public virtual void Generate()
+    public virtual void Generate(GameObject target)
     {
-        direction = Player.gameObject.transform.position - transform.position;
+        direction = target.gameObject.transform.position - transform.position;
         direction.Normalize();
     }
 }

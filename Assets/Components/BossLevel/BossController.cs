@@ -26,9 +26,9 @@ public class BossController : EnemyController
         base.Start();
 
         GradientColorKey[] colorKey = new GradientColorKey[2];
-        colorKey[0].color = Color.red;
+        colorKey[0].color = Color.green;
         colorKey[0].time = 0.0f;
-        colorKey[1].color = Color.black;
+        colorKey[1].color = Color.red;
         colorKey[1].time = bulletShootTime;
 
         GradientAlphaKey[] alphaKey = new GradientAlphaKey[2];
@@ -38,7 +38,7 @@ public class BossController : EnemyController
         alphaKey[1].time = bulletShootTime;
 
         gradient.SetKeys(colorKey, alphaKey);
-        material.SetColor("_Color", Color.red);
+        material.SetColor("_Color", colorKey[0].color);
     }
 
     // Update is called once per frame
@@ -78,7 +78,7 @@ public class BossController : EnemyController
                     bomb.gameObject.SetActive(true);
                     bomb.transform.position = enemyObjs[i].transform.position;
                 }
-                Destroy(enemyObjs[i]);
+                Destroy(enemyObjs[i].gameObject);
                 enemyObjs[i] = null;
             }         
         }
@@ -169,7 +169,7 @@ public class BossController : EnemyController
             bulletTimeCount = 0.0f;
         }
 
-        material.SetColor("_Color", gradient.Evaluate(bulletTimeCount));
+        material.SetColor("_Color", gradient.Evaluate(bulletTimeCount / bulletShootTime));
     }
 
     public BossLevelRainBullet rainBulletObject;
@@ -177,18 +177,20 @@ public class BossController : EnemyController
     protected void raining() {
         rainingTimeCount += Time.deltaTime;
         if (rainingTimeCount > 0.3f) {
-            for (int i = 0; i < 3; ++i) {
-                BossLevelRainBullet rain = Instantiate(rainBulletObject);
-                Vector3 offset =
-                    Quaternion.AngleAxis(Random.Range(0f, 360f), gameObject.transform.up)
-                    * gameObject.transform.forward
-                    * Random.Range(0, 15);
-                rain.gameObject.transform.position = 
-                    player.gameObject.transform.position
-                    + 30 * gameObject.transform.up
-                    + offset;
-                rain.active = true;
-            }
+            BossLevelRainBullet rain = Instantiate(rainBulletObject);
+            Vector3 direction = transform.position - player.transform.position;
+            direction.y = 0;
+            direction.Normalize();
+            Vector3 offset =
+                Quaternion.AngleAxis(Random.Range(-45f, 45f), gameObject.transform.up)
+                * direction
+                * Random.Range(30, 60);
+            rain.gameObject.transform.position = 
+                gameObject.transform.position
+                - 10 * gameObject.transform.up
+                + offset;
+            rain.Generate(player.gameObject);
+            rain.active = true;
             rainingTimeCount = 0f;
         }
     }
