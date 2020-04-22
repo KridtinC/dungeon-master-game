@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuzzleController : MonoBehaviour{
-	private bool completed;
+	public bool completed;
 	public TimeController time;
 	public GameObject obj;
 	private float duration = 2f;
