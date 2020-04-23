@@ -8,6 +8,7 @@ public class TimeController : MonoBehaviour
 	public Text TimeLeft;
 	public float timeValue;
 	public bool timeRun = false;
+	public int multipiler = 1;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -24,9 +25,10 @@ public class TimeController : MonoBehaviour
 
 	private void TimeCount(){
 		TimeLeft.enabled = true;
-		timeValue -= Time.deltaTime;
+		timeValue -= multipiler*Time.deltaTime;
 	}
 	public float TimeStop(){
+		multipiler = 1;
 		TimeLeft.enabled = false;
 		return timeValue;
 	}
