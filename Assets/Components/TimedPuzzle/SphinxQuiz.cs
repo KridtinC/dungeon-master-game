@@ -9,17 +9,20 @@ public class SphinxQuiz : MonoBehaviour{
 	public GameObject Ans2;
 	public GameObject Ans3;
 	public PlayerController player;
-	public float dist = 3f;
-	public float distA = 3f;
-	public float distB = 3f;
-	public float distC = 3f;
+	private float dist = 3f;
+	private float distA = 3f;
+	private float distB = 3f;
+	private float distC = 3f;
 	private float minDist = 2f;
 	private string text;
 	public TimeController time;
 	public PuzzleController puzzle;
 	// Start is called before the first frame update
 	void Start()
-	{		
+	{
+		Ans1.transform.Translate(Random.Range(-3,1)*4, 0, Random.Range(-3,3)*4);
+		Ans2.transform.Translate(Random.Range(-3,3)*4, 0, Random.Range(-3,3)*4);
+		Ans3.transform.Translate(Random.Range(-3,3)*4, 0, Random.Range(0,3)*4);
 	}
 	// Update is called once per frame
 	void Update(){
@@ -58,5 +61,4 @@ public class SphinxQuiz : MonoBehaviour{
 			}
 		}
 		}
-		
 }
