@@ -16,14 +16,14 @@ public class ActivatorController : MonoBehaviour{
     void Update(){
     if (dist <= minDist && Input.GetKeyDown(KeyCode.F)){
 		  time.timeRun = true;
-		}
+      }
     else{
       dist = Vector3.Distance(player.transform.position, button.transform.position);
-    }
+      }
     }
     void OnGUI(){
     if (dist <= minDist){
       GUI.TextArea(new Rect(50, 100, 100, 50), text);
+      }
     }
-  }
 }
