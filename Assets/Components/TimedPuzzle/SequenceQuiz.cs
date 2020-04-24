@@ -63,15 +63,19 @@ public class SequenceQuiz : MonoBehaviour
         if(seq1.Count == 6){
           puzzle.completed = true;
           time.multipiler = 1;
+          seq1.Clear();
         }
       }
+      }
+      else{
+        seq1.Clear();
       }
     }
   	void OnGUI(){
       if(time.timeRun && !puzzle.completed){
         if (dist <= minDist){
-
-          GUI.TextArea(new Rect(200, 200, 200, 100), "press the button by following order "+string.Join(",", seq0.ToArray()));
+          GUI.TextArea(new Rect(200, 200, 200, 100), "press the button by following order "
+          +string.Join(",", seq0.ToArray())+"\n"+string.Join(",", seq1.ToArray()));
         }
         if (dist1 <= minDist){
           GUI.TextArea(new Rect(50, 100, 50, 50), "1");

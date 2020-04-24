@@ -6,7 +6,7 @@ public class ActivatorController : MonoBehaviour{
   public PlayerController player;
 	private float dist;
 	private float minDist = 2f;
-	private string text = "Press 'F' to Activate Timer";
+	private string text = "Press 'F' to activate timer and read riddle";
   public TimeController time;
   public GameObject button;
     // Start is called before the first frame update

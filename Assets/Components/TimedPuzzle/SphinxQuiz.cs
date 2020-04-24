@@ -14,15 +14,22 @@ public class SphinxQuiz : MonoBehaviour{
 	private float distB = 3f;
 	private float distC = 3f;
 	private float minDist = 2f;
+	private List<string> Answer = new List<string>{"Memory","Name","Joke"};
+	private string A1;
+	private string A2;
+	private string A3;
 	private string text;
 	public TimeController time;
 	public PuzzleController puzzle;
 	// Start is called before the first frame update
 	void Start()
 	{
-		Ans1.transform.Translate(Random.Range(-3,1)*4, 0, Random.Range(-3,3)*4);
-		Ans2.transform.Translate(Random.Range(-3,3)*4, 0, Random.Range(-3,3)*4);
-		Ans3.transform.Translate(Random.Range(-3,3)*4, 0, Random.Range(0,3)*4);
+		A1 = Answer[Random.Range(0, Answer.Count)];
+		Answer.Remove(A1);
+		// Answer.IndexOf("Item");
+		A2 = Answer[Random.Range(0, Answer.Count)];
+		Answer.Remove(A2);
+		A3 = Answer[0];
 	}
 	// Update is called once per frame
 	void Update(){
@@ -34,7 +41,15 @@ public class SphinxQuiz : MonoBehaviour{
 				distC = Vector3.Distance(player.transform.position, Ans3.transform.position);
 			}
 			if(Input.GetKeyDown(KeyCode.R)){
-				if(distB <= minDist){
+				if(distA <= minDist && A1 == "Memory"){
+					puzzle.completed = true;
+					time.multipiler = 1;
+					}
+				else if(distB <= minDist && A2 == "Memory"){
+					puzzle.completed = true;
+					time.multipiler = 1;
+					}
+				else if(distC <= minDist && A3 == "Memory"){
 					puzzle.completed = true;
 					time.multipiler = 1;
 					}
@@ -51,13 +66,13 @@ public class SphinxQuiz : MonoBehaviour{
 				+ "is born in an instant, yet lasts a lifetime. Press 'R' near pillar to Answer.");
 			}
 			if (distA <= minDist){
-				GUI.TextArea(new Rect(50, 100, 150, 50), "Name");
+				GUI.TextArea(new Rect(100, 100, 60, 50), A1);
 			}
 			if (distB <= minDist){
-				GUI.TextArea(new Rect(50, 100, 150, 50), "Memory");
+				GUI.TextArea(new Rect(100, 100, 60, 50), A2);
 			}
 			if (distC <= minDist){
-				GUI.TextArea(new Rect(50, 100, 150, 50), "Joke");
+				GUI.TextArea(new Rect(100, 100, 60, 50), A3);
 			}
 		}
 		}
