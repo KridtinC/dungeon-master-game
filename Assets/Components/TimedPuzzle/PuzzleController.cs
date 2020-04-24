@@ -6,7 +6,7 @@ public class PuzzleController : MonoBehaviour{
 	public bool completed = false;
 	public TimeController time;
 	public GameObject obj;
-	private float duration = 2f;
+	private float duration = 1.5f;
 	public PlayerController player;
 	// Start is called before the first frame update
 	void Start(){

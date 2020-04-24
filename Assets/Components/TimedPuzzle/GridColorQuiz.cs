@@ -109,34 +109,34 @@ public class GridColorQuiz : MonoBehaviour{
     void OnGUI(){
       if(time.timeRun && !puzzle.completed){
         if (dist <= minDist){
-          GUI.TextArea(new Rect(200, 200, 200, 100), "press 'R' near a pillar to create color on each cube");
+          GUI.TextArea(new Rect(200, 200, 200, 50), "press 'R' near a cube to change into color from text");
         }
         else if (dist1 <= minDist){
-          GUI.TextArea(new Rect(50, 100, 50, 50), RGBstring(trueGrid[0]));
+          GUI.TextArea(new Rect(50, 100, 50, 30), RGBstring(trueGrid[0]));
         }
         else if (dist2 <= minDist){
-          GUI.TextArea(new Rect(50, 100, 50, 50), RGBstring(trueGrid[1]));
+          GUI.TextArea(new Rect(50, 100, 50, 30), RGBstring(trueGrid[1]));
         }
         else if (dist3 <= minDist){
-          GUI.TextArea(new Rect(50, 100, 50, 50), RGBstring(trueGrid[2]));
+          GUI.TextArea(new Rect(50, 100, 50, 30), RGBstring(trueGrid[2]));
         }
         else if (dist4 <= minDist){
-          GUI.TextArea(new Rect(50, 100, 50, 50), RGBstring(trueGrid[3]));
+          GUI.TextArea(new Rect(50, 100, 50, 30), RGBstring(trueGrid[3]));
         }
         else if (dist5 <= minDist){
-          GUI.TextArea(new Rect(50, 100, 50, 50), RGBstring(trueGrid[4]));
+          GUI.TextArea(new Rect(50, 100, 50, 30), RGBstring(trueGrid[4]));
         }
         else if (dist6 <= minDist){
-          GUI.TextArea(new Rect(50, 100, 50, 50), RGBstring(trueGrid[5]));
+          GUI.TextArea(new Rect(50, 100, 50, 30), RGBstring(trueGrid[5]));
         }
         else if (dist7 <= minDist){
-          GUI.TextArea(new Rect(50, 100, 50, 50), RGBstring(trueGrid[6]));
+          GUI.TextArea(new Rect(50, 100, 50, 30), RGBstring(trueGrid[6]));
         }
         else if (dist8 <= minDist){
-          GUI.TextArea(new Rect(50, 100, 50, 50), RGBstring(trueGrid[7]));
+          GUI.TextArea(new Rect(50, 100, 50, 30), RGBstring(trueGrid[7]));
         }
         else if (dist9 <= minDist){
-          GUI.TextArea(new Rect(50, 100, 50, 50), RGBstring(trueGrid[8]));
+          GUI.TextArea(new Rect(50, 100, 50, 30), RGBstring(trueGrid[8]));
         }
       }
 		}
