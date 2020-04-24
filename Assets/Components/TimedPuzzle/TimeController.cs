@@ -44,6 +44,6 @@ public class TimeController : MonoBehaviour{
 		}
 		
 	public void setTimeOrigin(){
-		timeValue = 60f;
+		timeValue = 45f;
 		}
 }
