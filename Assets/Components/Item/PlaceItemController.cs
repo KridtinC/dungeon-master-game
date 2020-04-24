@@ -16,9 +16,9 @@ public class PlaceItemController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        dist = Vector3.Distance(player.transform.position, transform.position);
         if (!isPlaced)
         {
-            dist = Vector3.Distance(player.transform.position, transform.position);
             if (dist <= minDist && player.GetInventory().Count > 0)
             {
                 if(Input.GetKey(KeyCode.E) && !isSelectingItem)
@@ -60,11 +60,7 @@ public class PlaceItemController : MonoBehaviour
     {
         if (dist <= minDist)
         {
-            if (player.GetInventory().Count == 0)
-            {
-                GUI.TextArea(new Rect(100, 50, 200, 100), "You don't have any item");
-            }
-            else
+            if (player.GetInventory().Count > 0)
             {
                 if (!isPlaced && !isSelectingItem)
                 {
