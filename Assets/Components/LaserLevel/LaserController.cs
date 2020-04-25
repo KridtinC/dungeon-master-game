@@ -6,6 +6,7 @@ public class LaserController : MonoBehaviour
 {
 
     private LineRenderer lr;
+    public Vector3 initDirection;
     void Start()
     {
         lr = GetComponent<LineRenderer>();
@@ -15,40 +16,117 @@ public class LaserController : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(lr.GetPosition(0), Vector3.right, out hit))
+        if (Physics.Raycast(lr.GetPosition(0), initDirection, out hit))
         {
-            
-            if(hit.collider.name.Contains("Mirror1"))
+            if (hit.collider.name.Contains("Mirror"))
             {
-                RaycastHit hit2;
-                lr.SetPosition(1, new Vector3(0, 1, -21));
+                lr.SetPosition(1, hit.point);
                 lr.positionCount = 3;
-                Vector3 direction;
-
-                if (hit.collider.gameObject.transform.eulerAngles.y.ToString().Equals("45") || hit.collider.gameObject.transform.eulerAngles.y.ToString().Equals("225"))
-                {
-                    lr.SetPosition(2, new Vector3(0, 1, -42));
-                    direction = Vector3.back;
-                }
+                Vector3 laserDirectionNext = checkDirection(hit.collider.gameObject, (lr.GetPosition(1) - lr.GetPosition(0)).normalized);
+                if (laserDirectionNext != Vector3.zero)
+                    lr.SetPosition(2, laserDirectionNext * 5000);
                 else
-                {
-                    lr.SetPosition(2, new Vector3(0, 1, 0));
-                    direction = Vector3.forward;
-                }
+                    lr.SetPosition(2, hit.point);
 
-                if(Physics.Raycast(lr.GetPosition(1), direction, out hit2)){
-                    if (hit2.collider.name.Contains("Mirror2"))
+
+                if (Physics.Raycast(lr.GetPosition(1), laserDirectionNext, out hit)){
+
+                    if (hit.collider.name.Contains("Mirror"))
                     {
-                        print(hit2.collider);
+                        lr.SetPosition(2, hit.point);
+                        lr.positionCount = 4;
+                        Vector3 laserDirectionNext2 = checkDirection(hit.collider.gameObject, (lr.GetPosition(2) - lr.GetPosition(1)).normalized);
+                        if (laserDirectionNext2 != Vector3.zero)
+                            lr.SetPosition(3, laserDirectionNext2 * 5000);
+                        else
+                            lr.SetPosition(3, hit.point);
+
+
+                        if (Physics.Raycast(lr.GetPosition(2), laserDirectionNext2, out hit))
+                        {
+
+                            if (hit.collider.name.Contains("Mirror"))
+                            {
+                                lr.SetPosition(3, hit.point);
+                                lr.positionCount = 5;
+                                Vector3 laserDirectionNext3 = checkDirection(hit.collider.gameObject, (lr.GetPosition(3) - lr.GetPosition(2)).normalized);
+                                if (laserDirectionNext3 != Vector3.zero)
+                                    lr.SetPosition(4, laserDirectionNext3 * 5000);
+                                else
+                                    lr.SetPosition(4, hit.point);
+
+
+                                if (Physics.Raycast(lr.GetPosition(3), laserDirectionNext3, out hit))
+                                {
+                                    if (hit.collider.name.Contains("Door"))
+                                    {
+                                        DoorController door = hit.collider.gameObject.GetComponent<DoorController>();
+                                        if (door.GetDoorColor() == GetComponent<Renderer>().material.GetColor("_Color"))
+                                        {
+                                            door.activate();
+                                        }
+                                        else
+                                        {
+                                            lr.SetPosition(4, hit.point);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        lr.positionCount = 5;
+                                        lr.SetPosition(4, hit.point);
+                                    }
+                                }
+                            }
+                            else if (hit.collider.name.Contains("Door"))
+                            {
+                                DoorController door = hit.collider.gameObject.GetComponent<DoorController>();
+                                if (door.GetDoorColor() == GetComponent<Renderer>().material.GetColor("_Color"))
+                                {
+                                    door.activate();
+                                }
+                                else
+                                {
+                                    lr.SetPosition(3, hit.point);
+                                }
+                            }
+                            else
+                            {
+                                lr.positionCount = 4;
+                                lr.SetPosition(3, hit.point);
+                            }
+                        }
+                    }
+                    else if (hit.collider.name.Contains("Door"))
+                    {
+                        DoorController door = hit.collider.gameObject.GetComponent<DoorController>();
+                        if (door.GetDoorColor() == GetComponent<Renderer>().material.GetColor("_Color"))
+                        {
+                            door.activate();
+                        }
+                        else
+                        {
+                            lr.SetPosition(2, hit.point);
+                        }
                     }
                     else
                     {
                         lr.positionCount = 3;
-                        lr.SetPosition(2, hit2.point);
+                        lr.SetPosition(2, hit.point);
                     }
                 }
-                
-                
+
+            }
+            else if (hit.collider.name.Contains("Door"))
+            {
+                DoorController door = hit.collider.gameObject.GetComponent<DoorController>();
+                if (door.GetDoorColor() == GetComponent<Renderer>().material.GetColor("_Color"))
+                {
+                    door.activate();
+                }
+                else
+                {
+                    lr.SetPosition(1, hit.point);
+                }
             }
             else
             {
@@ -56,5 +134,39 @@ public class LaserController : MonoBehaviour
                 lr.SetPosition(1, hit.point);
             }
         }
+    }
+
+    Vector3 checkDirection(GameObject gameObj, Vector3 laserDirection)
+    {
+        string mirrorAngle = gameObj.transform.eulerAngles.y.ToString();
+        if (laserDirection == Vector3.forward)
+        {
+            if (mirrorAngle.Equals("135"))
+                return Vector3.right;
+            if (mirrorAngle.Equals("225"))
+                return Vector3.left;
+        }
+        else if(laserDirection == Vector3.back)
+        {
+            if (mirrorAngle.Equals("45"))
+                return Vector3.right;
+            if (mirrorAngle.Equals("315"))
+                return Vector3.left;
+        }
+        else if(laserDirection == Vector3.right)
+        {
+            if (mirrorAngle.Equals("225"))
+                return Vector3.back;
+            if (mirrorAngle.Equals("315"))
+                return Vector3.forward;
+        }
+        else if (laserDirection == Vector3.left)
+        {
+            if (mirrorAngle.Equals("45"))
+                return Vector3.forward;
+            if (mirrorAngle.Equals("135"))
+                return Vector3.back;
+        }
+        return Vector3.zero;
     }
 }

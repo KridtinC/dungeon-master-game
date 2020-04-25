@@ -19,7 +19,7 @@ public class CreepController : EnemyController
         {
             base.Update();
         }
-        if (Vector3.Distance(player.transform.position, transform.position)> 6)
+        if (Vector3.Distance(player.transform.position, transform.position)> 10)
         {
             isFollow = false;
         }

@@ -19,9 +19,17 @@ public class MirrorController : MonoBehaviour
     void Update()
     {
         dist = Vector3.Distance(player.transform.position, transform.position);
-        if (dist <= minDist && Input.GetKeyDown(KeyCode.G))
+        if (dist <= minDist && Input.GetKeyDown(KeyCode.Q))
         {
             transform.Rotate(0.0f, 90.0f, 0.0f, Space.Self);
+        }
+    }
+
+    void OnGUI()
+    {
+        if (dist <= minDist)
+        {
+            GUI.TextArea(new Rect(300, 50, 200, 100), "Press 'Q' to rotate.");
         }
     }
 }
