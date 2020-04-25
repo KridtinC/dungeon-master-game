@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target_camera_translation = new Vector3(0, 6, -4);
+        target_camera_translation = new Vector3(0, 15, -10);
         transform.rotation = Quaternion.LookRotation(-target_camera_translation, Vector3.up);
     }
 

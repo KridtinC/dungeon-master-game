@@ -10,7 +10,6 @@ public class EnemyController : MonoBehaviour
     public float hp = 30;
     public float attack = 3;
     private bool isCollide;
-    public bool isFollow;
 
     public float speed = 1.5f;
     protected float stepBack = 1.5f;
@@ -19,13 +18,12 @@ public class EnemyController : MonoBehaviour
     protected virtual void Start()
     {
         isCollide = false;
-        isFollow = true;
     }
 
     // Update is called once per frame
     protected virtual void Update()
     {
-        if (!isCollide & isFollow)
+        if (!isCollide)
         {
             Follow();
         }
