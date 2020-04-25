@@ -115,6 +115,15 @@ public class PlayerController : MonoBehaviour
         inventory.RemoveAt(itemIndex);
     }
 
+    public void OnPlaceItem(int itemIndex, PlaceKeyItemController placeItemArea)
+    {
+        ItemController item = Instantiate(inventory[itemIndex]);
+        item.name = inventory[itemIndex].name;
+        item.gameObject.transform.position = placeItemArea.transform.position;
+        item.gameObject.SetActive(true);
+        inventory.RemoveAt(itemIndex);
+    }
+
     public float GetHP()
     {
         return hp;
