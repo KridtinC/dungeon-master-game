@@ -76,7 +76,7 @@ public class PlaceItemController : MonoBehaviour
                             inv += "> ";
                         inv += "- " + inventory[i].name + "\n";
                     }
-                    GUI.TextArea(new Rect(100, 50, 200, 100), "Select item:\n" + inv);
+                    GUI.TextArea(new Rect(100, 50, 200, 100), "Select and press spacebar to place:\n" + inv);
                 }
             }
         }
