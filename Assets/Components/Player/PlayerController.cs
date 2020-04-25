@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     protected float attackRange = 2;
     private List<ItemController> inventory;
 
+    protected bool Movable = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +32,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if (Movable)
+        {
+            Move();
+        }
+        
     }
 
     private void Move()
@@ -147,5 +153,15 @@ public class PlayerController : MonoBehaviour
     public List<ItemController> GetInventory()
     {
         return inventory;
+    }
+
+    public void setUnmove()
+    {
+        Movable = false;
+    }
+
+    public void setMove()
+    {
+        Movable = true;
     }
 }
