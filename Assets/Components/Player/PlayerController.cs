@@ -154,7 +154,6 @@ public class PlayerController : MonoBehaviour
     {
         return inventory;
     }
-
     public void setUnmove()
     {
         Movable = false;
@@ -164,4 +163,7 @@ public class PlayerController : MonoBehaviour
     {
         Movable = true;
     }
-}
+
+    public void RefillHP() {
+        hp = GetMaxHP();
+    }
