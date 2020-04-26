@@ -6,7 +6,7 @@ public class triggerController : MonoBehaviour
 {
     public PlayerController player;
     protected float dist;
-    protected string text = "E";
+    protected string text = "Press E to unlock";
     protected bool isTrigged = false;
     protected float minDist = 1.5f;
     public bool isNotRender;

@@ -164,6 +164,11 @@ public class PlayerController : MonoBehaviour
         Movable = true;
     }
 
+    public bool getMovable()
+    {
+        return Movable;
+    }
+
     public void RefillHP()
     {
         hp = GetMaxHP();

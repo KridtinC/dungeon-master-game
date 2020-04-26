@@ -54,4 +54,16 @@ public class MagicViewController : ItemController
 
         }
     }
+
+    void OnGUI()
+    {
+        if (dist <= minDist && !pickup)
+        {
+            GUI.TextArea(new Rect(100, 50, 200, 100), text);
+        }
+        if (!player.getMovable())
+        {
+            GUI.TextArea(new Rect(300, 300, 200, 50), "Press Q to Move again");
+        }
+    }
 }
