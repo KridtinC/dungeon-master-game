@@ -5,8 +5,6 @@ using UnityEngine;
 public class DelayedFakeFloor : MonoBehaviour
 {
     public PlayerController player;
-    protected float dist;
-    protected float minDist = 3f;
     protected bool isStep = false;
     // Start is called before the first frame update
     void Start()
@@ -17,23 +15,8 @@ public class DelayedFakeFloor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isStep)
-        {
-            dist = Vector3.Distance(player.transform.position, transform.position);
-            if (dist <= minDist)
-            {
-                isStep = true;
-            }
-            else
-            {
-                isStep = false;
-            }
-
-        }
-        else
-            StartCoroutine(ExecuteAfterTime(2f));
-            
-
+        if (isStep)
+          StartCoroutine(ExecuteAfterTime(2f));
     }
 
     IEnumerator ExecuteAfterTime(float time)
@@ -42,5 +25,13 @@ public class DelayedFakeFloor : MonoBehaviour
 
         // Code to execute after the delay
         gameObject.SetActive(false);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            isStep = true;
+        }
     }
 }

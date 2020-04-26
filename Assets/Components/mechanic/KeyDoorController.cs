@@ -17,7 +17,7 @@ public class KeyDoorController : MonoBehaviour
             if (transform.position.y > -1)
             {
                 float YY = transform.position.y;
-                YY = YY - 0.05f;
+                YY = YY - 0.02f;
                 transform.position = new Vector3(transform.position.x, YY, transform.position.z);
             }
 

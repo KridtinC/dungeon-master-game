@@ -9,11 +9,16 @@ public class triggerController : MonoBehaviour
     protected string text = "E";
     protected bool isTrigged = false;
     protected float minDist = 1.5f;
+    public bool isNotRender;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        if (isNotRender)
+        {
+            this.GetComponent<Renderer>().enabled = false;
+        }
         
     }
 

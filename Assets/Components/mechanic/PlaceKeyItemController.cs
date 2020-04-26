@@ -14,13 +14,13 @@ public class PlaceKeyItemController : MonoBehaviour
     protected string text = "Press 'E' to place item.";
     protected bool isPlaced = false;
     protected float minDist = 2f;
-    private string Key;
+    private string Key="";
     // Update is called once per frame
     void Update()
     {
         dist = Vector3.Distance(player.transform.position, transform.position);
-        if (!isCorrect)
-        {
+        //if (!isCorrect)
+        //{
             if (!isPlaced)
             {
                 
@@ -60,19 +60,24 @@ public class PlaceKeyItemController : MonoBehaviour
                 {
                     isPlaced = false;
                     Key = "";
+                    checkCorrectKey();
                 }
             }
 
-        }
-        else
-        {
-            dist = Vector3.Distance(player.transform.position, transform.position);
-        }
+        //}
+        //else
+        //{
+        //    dist = Vector3.Distance(player.transform.position, transform.position);
+        //    {
+        //        isPlaced = false;
+        //        isCorrect = false;
+        //    }
+        //}
        
         print(itemIndex);
-    }
+}
 
-    void checkCorrectKey()
+void checkCorrectKey()
     {
         if(Specific == Key)
         {

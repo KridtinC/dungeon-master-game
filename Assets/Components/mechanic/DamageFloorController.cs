@@ -29,7 +29,7 @@ public class DamageFloorController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision) //Attack
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Player")
         {
