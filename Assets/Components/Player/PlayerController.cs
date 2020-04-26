@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         {
             Move();
         }
-        
+
     }
 
     private void Move()
@@ -99,12 +99,12 @@ public class PlayerController : MonoBehaviour
     {
         if (item is WeaponController)
         {
-            attack += ((WeaponController) item).GetAttack();
+            attack += ((WeaponController)item).GetAttack();
             attackRange = Mathf.Max(attackRange, ((WeaponController)item).GetRange());
         }
         else if (item is CoinController)
         {
-            money += ((CoinController) item).GetValue();
+            money += ((CoinController)item).GetValue();
         }
         else
         {
@@ -164,6 +164,8 @@ public class PlayerController : MonoBehaviour
         Movable = true;
     }
 
-    public void RefillHP() {
+    public void RefillHP()
+    {
         hp = GetMaxHP();
     }
+}
