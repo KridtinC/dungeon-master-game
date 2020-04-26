@@ -2227,6 +2227,7 @@ MonoBehaviour:
   rb: {fileID: 1396533253}
   hp: 0
   attack: 0
+  isFollow: 0
   speed: 1.5
 --- !u!54 &1396533253
 Rigidbody:

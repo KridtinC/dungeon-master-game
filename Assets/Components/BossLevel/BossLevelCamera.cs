@@ -16,14 +16,23 @@ public class BossLevelCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float singleStep = 3 * Time.deltaTime;
+
+        Vector3 direction;
+        if (Boss == null) {
+            direction = Player.transform.position - transform.position;
+            direction.Normalize();
+            transform.rotation = Quaternion.LookRotation(direction); 
+            return;
+        }
+
         if (!Boss.OnTop(Player.gameObject)) {
             position = Player.transform.position;
         }
-        Vector3 direction = Boss.transform.position - position;
+        direction = Boss.transform.position - position;
         direction.y = 0;
 
         float length = Mathf.Clamp(direction.magnitude, 12, 30);
-        float singleStep = 3 * Time.deltaTime;
         direction = Vector3.RotateTowards(transform.forward, direction, singleStep, 0.0f);
 
         Vector3 newPosition = Boss.transform.position - 2f * direction * length;
