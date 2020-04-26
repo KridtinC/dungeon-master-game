@@ -166,6 +166,7 @@ public class BossController : EnemyController
             BossLevelBullet bullet = Instantiate(bulletObject);
             bullet.gameObject.transform.position = transform.position - 8 * transform.up;
             bullet.active = true;
+            bullet.gameObject.SetActive(true);
             bulletTimeCount = 0.0f;
         }
 
@@ -191,6 +192,7 @@ public class BossController : EnemyController
                 + offset;
             rain.Generate(player.gameObject);
             rain.active = true;
+            rain.gameObject.SetActive(true);
             rainingTimeCount = 0f;
         }
     }

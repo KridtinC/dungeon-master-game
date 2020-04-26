@@ -18,7 +18,7 @@ public class BossLevelController : MonoBehaviour
         if (Input.GetKey(KeyCode.P)) {
             player.RefillHP();
         }
-        if (boss != null && player != null) {
+        if (player != null) {
             if (player.GetHP() <= 0) {
                 reload();
             }

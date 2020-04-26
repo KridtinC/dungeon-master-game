@@ -13,7 +13,10 @@ public class BossLevelRainBullet : BossLevelBullet
             direction.Normalize();
 
             gameObject.transform.rotation = 
-                Quaternion.LookRotation(transform.right, direction);
+                Quaternion.LookRotation(
+                    Quaternion.AngleAxis(90, transform.up) * direction,
+                    Vector3.up
+                );
         } else {
             direction = -gameObject.transform.up;
         }

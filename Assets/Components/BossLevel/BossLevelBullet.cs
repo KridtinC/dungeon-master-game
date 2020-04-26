@@ -22,7 +22,7 @@ public class BossLevelBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<MeshRenderer>().enabled = active;
+        render();
         if (!active) return;
         transform.position += direction * Time.deltaTime * 20f;
         if (transform.position.x < -Bound || transform.position.x > Bound) {
@@ -32,6 +32,12 @@ public class BossLevelBullet : MonoBehaviour
         } else if (transform.position.y < -Bound) {
             Destroy(this.gameObject);
         }
+    }
+
+    void render() {
+        gameObject.SetActive(active);
+        MeshRenderer mesh = GetComponent<MeshRenderer>();
+        if (mesh) mesh.enabled = active;
     }
 
     void OnCollisionEnter(Collision collision) {
