@@ -350,7 +350,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -478,11 +478,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1825888367}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -493,8 +488,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &43074997
 GameObject:
@@ -509,7 +503,7 @@ GameObject:
   - component: {fileID: 43074999}
   - component: {fileID: 43074998}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,7 +998,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -1298,7 +1292,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -1349,29 +1343,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140279477}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &141721271 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 780125445}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &141721272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141721271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &156445427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,7 +1386,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -1603,7 +1574,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -1712,7 +1683,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -1806,7 +1777,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -2027,11 +1998,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1716993793}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -2042,8 +2008,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &193650294 stripped
 GameObject:
@@ -2128,11 +2093,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1681001308}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -2143,8 +2103,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &207325548
 GameObject:
@@ -2239,29 +2198,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207325548}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &208671703 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 662310710}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &208671704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208671703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &226142564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2305,7 +2241,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -2506,7 +2442,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -2557,29 +2493,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242041403}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &245277820 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1383842488}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &245277821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245277820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &247713664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,7 +2506,7 @@ GameObject:
   - component: {fileID: 247713666}
   - component: {fileID: 247713665}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2918,7 +2831,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -3154,11 +3067,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 968221693}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -3169,8 +3077,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &284075337 stripped
 GameObject:
@@ -3320,7 +3227,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &292901896
 MonoBehaviour:
@@ -3409,52 +3316,6 @@ Transform:
   m_Father: {fileID: 1640681898}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &295209036 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1438789740}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &295209037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295209036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
---- !u!1 &296654345 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1586161348}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &296654346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296654345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &297380308
 GameObject:
   m_ObjectHideFlags: 0
@@ -3535,7 +3396,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -3693,98 +3554,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &329081722 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1605508631}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &329081723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329081722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
---- !u!1 &342476759 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 503945790}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &342476760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342476759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
---- !u!1 &347874831 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1333599685}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &347874832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347874831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
---- !u!1 &368564087 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1967341668}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &368564088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368564087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &372804741
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,7 +3597,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -4343,29 +4112,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410886885}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &424633433 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 8027994541436471513}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &424633434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424633433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &431620366
 GameObject:
   m_ObjectHideFlags: 0
@@ -4536,11 +4282,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1598168097}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -4551,32 +4292,8 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
---- !u!1 &463897706 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1381299856}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &463897707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463897706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &476235111
 GameObject:
   m_ObjectHideFlags: 0
@@ -4992,7 +4709,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -5086,7 +4803,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -5230,29 +4947,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496235360}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &498348040 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1937633380}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &498348041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 498348040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1001 &503945790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5330,11 +5024,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 342476760}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -5345,8 +5034,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &514374185
 GameObject:
@@ -5392,7 +5080,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -5460,29 +5148,6 @@ MonoBehaviour:
   - {fileID: 545790690}
   - {fileID: 805632008}
   - {fileID: 1847719427}
---- !u!1 &518260125 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1972259980}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &518260126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518260125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &520031586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8027994541095923908, guid: 8e57e6a4593d44f4db8b32ea370892b5,
@@ -5566,11 +5231,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1494559453}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -5581,8 +5241,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &533955523 stripped
 GameObject:
@@ -5590,29 +5249,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 533955522}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &543575458 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1455327711}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &543575459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543575458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &543745520 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8027994541095923908, guid: 8e57e6a4593d44f4db8b32ea370892b5,
@@ -5696,11 +5332,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1834208743}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -5711,8 +5342,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &545790690 stripped
 GameObject:
@@ -5720,29 +5350,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 545790689}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &553504676 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1717052584}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &553504677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553504676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &557345947
 GameObject:
   m_ObjectHideFlags: 0
@@ -5942,7 +5549,7 @@ GameObject:
   - component: {fileID: 568518092}
   - component: {fileID: 568518091}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6457,7 +6064,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -6660,7 +6267,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -6727,29 +6334,6 @@ MonoBehaviour:
   objects:
   - {fileID: 1742574035}
   - {fileID: 1310813982}
---- !u!1 &640702940 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1537528862}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &640702941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640702940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &653676190
 GameObject:
   m_ObjectHideFlags: 0
@@ -6920,11 +6504,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 2099238419}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -6935,8 +6514,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1001 &662310710
 PrefabInstance:
@@ -7015,11 +6593,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 208671704}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -7030,8 +6603,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &662310711 stripped
 GameObject:
@@ -7269,7 +6841,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -7349,7 +6921,7 @@ GameObject:
   - component: {fileID: 669104556}
   - component: {fileID: 669104555}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7549,7 +7121,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -7708,29 +7280,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 292901896}
   Door_key: BITCH
---- !u!1 &689962093 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1659526595}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &689962094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689962093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &714077638
 GameObject:
   m_ObjectHideFlags: 0
@@ -7851,7 +7400,7 @@ GameObject:
   - component: {fileID: 717706661}
   - component: {fileID: 717706660}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8068,7 +7617,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -8135,29 +7684,6 @@ MonoBehaviour:
   objects:
   - {fileID: 520031586}
   - {fileID: 1734940288}
---- !u!1 &746493501 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 2081286247}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &746493502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746493501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &757610406
 GameObject:
   m_ObjectHideFlags: 0
@@ -8201,7 +7727,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -8519,11 +8045,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 141721272}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -8534,8 +8055,7 @@ PrefabInstance:
       propertyPath: attack
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &780504486
 GameObject:
@@ -8580,7 +8100,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -8708,11 +8228,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 904809807}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -8723,8 +8238,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &805632008 stripped
 GameObject:
@@ -8809,11 +8323,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1298814924}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -8824,8 +8333,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &820490188 stripped
 GameObject:
@@ -9017,11 +8525,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1558508935}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -9032,8 +8535,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &853244377
 GameObject:
@@ -9205,11 +8707,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1587613903}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -9220,32 +8717,8 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
---- !u!1 &858357851 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 949119763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &858357852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858357851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &858803992
 GameObject:
   m_ObjectHideFlags: 0
@@ -9416,11 +8889,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1086367064}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -9431,8 +8899,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &867085946 stripped
 GameObject:
@@ -9453,7 +8920,7 @@ GameObject:
   - component: {fileID: 870287569}
   - component: {fileID: 870287568}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9626,29 +9093,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884343283}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &904809806 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 805632007}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &904809807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 904809806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &905236629
 GameObject:
   m_ObjectHideFlags: 0
@@ -9686,29 +9130,6 @@ RectTransform:
   m_AnchoredPosition: {x: -825, y: 250}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &917359093 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1742574034}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &917359094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 917359093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &943992176
 GameObject:
   m_ObjectHideFlags: 0
@@ -9972,11 +9393,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 858357852}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -9987,8 +9403,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &959622083
 GameObject:
@@ -10176,29 +9591,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963383203}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &968221692 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 284075336}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &968221693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968221692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &968415814
 GameObject:
   m_ObjectHideFlags: 0
@@ -10658,11 +10050,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 2039697006}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -10673,32 +10060,8 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
---- !u!1 &999813559 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1847719426}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &999813560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999813559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1013280905
 GameObject:
   m_ObjectHideFlags: 0
@@ -11483,11 +10846,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1597032356}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -11498,32 +10856,8 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
---- !u!1 &1086367063 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 867085945}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1086367064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086367063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1087234008
 GameObject:
   m_ObjectHideFlags: 0
@@ -11694,11 +11028,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1560143568}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -11709,8 +11038,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1112579275
 GameObject:
@@ -11755,7 +11083,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -11806,29 +11134,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112579275}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1125579415 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1290582336}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1125579416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1125579415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1128178542
 GameObject:
   m_ObjectHideFlags: 0
@@ -11872,7 +11177,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -12159,7 +11464,7 @@ GameObject:
   - component: {fileID: 1151791998}
   - component: {fileID: 1151791997}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12332,52 +11637,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155926660}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1157705778 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 2039326919}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1157705779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157705778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
---- !u!1 &1168825326 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1317005709}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1168825327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168825326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1170726862
 GameObject:
   m_ObjectHideFlags: 0
@@ -12421,7 +11680,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -12516,7 +11775,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -12625,7 +11884,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -12812,7 +12071,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -12863,29 +12122,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214443366}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1218050978 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1310813981}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1218050979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218050978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1218179813
 GameObject:
   m_ObjectHideFlags: 0
@@ -13192,7 +12428,7 @@ GameObject:
   - component: {fileID: 1248447368}
   - component: {fileID: 1248447367}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13315,7 +12551,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -13409,7 +12645,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -13537,11 +12773,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1125579416}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -13552,55 +12783,8 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
---- !u!1 &1298781739 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 2051803665}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1298781740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298781739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
---- !u!1 &1298814923 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 820490187}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1298814924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298814923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1001 &1310813981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13678,11 +12862,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1218050979}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -13693,8 +12872,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1310813982 stripped
 GameObject:
@@ -13779,11 +12957,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1168825327}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -13794,8 +12967,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1322374245
 GameObject:
@@ -14168,11 +13340,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 347874832}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -14183,8 +13350,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1340878885
 GameObject:
@@ -14632,11 +13798,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 2066586516}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -14647,8 +13808,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1371755503
 GameObject:
@@ -14820,11 +13980,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 463897707}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -14835,8 +13990,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1001 &1383842488
 PrefabInstance:
@@ -14915,11 +14069,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 245277821}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -14930,8 +14079,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1383842489 stripped
 GameObject:
@@ -15417,11 +14565,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 295209037}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -15432,8 +14575,7 @@ PrefabInstance:
       propertyPath: attack
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1441111354
 GameObject:
@@ -15582,7 +14724,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -15662,7 +14804,7 @@ GameObject:
   - component: {fileID: 1448269279}
   - component: {fileID: 1448269278}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15819,11 +14961,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 543575459}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -15834,8 +14971,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1462784966
 GameObject:
@@ -16036,7 +15172,7 @@ GameObject:
   - component: {fileID: 1484672899}
   - component: {fileID: 1484672898}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16116,29 +15252,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1494559452 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 533955522}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1494559453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494559452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1501901168 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8027994541095923908, guid: 8e57e6a4593d44f4db8b32ea370892b5,
@@ -16158,7 +15271,7 @@ GameObject:
   - component: {fileID: 1509769665}
   - component: {fileID: 1509769664}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16281,7 +15394,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -16409,11 +15522,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 640702941}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -16424,8 +15532,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1539460531
 GameObject:
@@ -16440,7 +15547,7 @@ GameObject:
   - component: {fileID: 1539460533}
   - component: {fileID: 1539460532}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16520,75 +15627,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1546362490 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1958412344}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1546362491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546362490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
---- !u!1 &1558508934 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 849303028}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1558508935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558508934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
---- !u!1 &1560143567 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1089989313}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1560143568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560143567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1567035737
 GameObject:
   m_ObjectHideFlags: 0
@@ -16695,7 +15733,7 @@ GameObject:
   - component: {fileID: 1567171600}
   - component: {fileID: 1567171599}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17145,11 +16183,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 296654346}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -17160,8 +16193,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1586161349 stripped
 GameObject:
@@ -17262,29 +16294,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587198070}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1587613902 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 853568845}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1587613903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587613902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1593238175
 GameObject:
   m_ObjectHideFlags: 0
@@ -17328,7 +16337,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -17379,52 +16388,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593238175}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1597032355 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1078651671}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1597032356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597032355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
---- !u!1 &1598168096 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 457897181}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1598168097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598168096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1602464719
 GameObject:
   m_ObjectHideFlags: 0
@@ -17595,11 +16558,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 329081723}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -17610,32 +16568,8 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
---- !u!1 &1614922245 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1638597386}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1614922246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614922245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1617815572
 GameObject:
   m_ObjectHideFlags: 0
@@ -17787,7 +16721,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -18167,11 +17101,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1614922246}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -18182,8 +17111,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1640081378
 GameObject:
@@ -18588,11 +17516,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 2006298537}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -18603,8 +17526,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1001 &1659526595
 PrefabInstance:
@@ -18683,11 +17605,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 689962094}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -18698,32 +17615,8 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
---- !u!1 &1681001307 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 202165890}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1681001308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681001307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1685019514
 GameObject:
   m_ObjectHideFlags: 0
@@ -18894,11 +17787,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 2045528744}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -18909,8 +17797,7 @@ PrefabInstance:
       propertyPath: attack
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1001 &1705353636
 PrefabInstance:
@@ -18989,11 +17876,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 2058531948}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -19004,8 +17886,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1708728058
 GameObject:
@@ -19050,7 +17931,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -19194,29 +18075,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710093825}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1716993792 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 193650293}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1716993793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716993792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1001 &1717052584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19294,11 +18152,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 553504677}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -19309,8 +18162,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1718485276
 GameObject:
@@ -19355,7 +18207,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -19450,7 +18302,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -19673,7 +18525,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -19801,11 +18653,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 917359094}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -19816,8 +18663,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1742574035 stripped
 GameObject:
@@ -19868,7 +18714,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -20164,7 +19010,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -20325,29 +19171,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824782416}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1825888366 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 37011291}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1825888367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825888366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1826988314
 GameObject:
   m_ObjectHideFlags: 0
@@ -20421,29 +19244,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826988314}
   m_CullTransparentMesh: 0
---- !u!1 &1834208742 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 545790689}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1834208743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834208742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &1836131434
 GameObject:
   m_ObjectHideFlags: 0
@@ -20487,7 +19287,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -20708,11 +19508,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 999813560}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -20723,8 +19518,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1847719427 stripped
 GameObject:
@@ -20775,7 +19569,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -20962,7 +19756,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -21229,7 +20023,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -21308,7 +20102,7 @@ GameObject:
   - component: {fileID: 1933147170}
   - component: {fileID: 1933147169}
   m_Layer: 0
-  m_Name: GoldCoins
+  m_Name: GoldCoins (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21465,11 +20259,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 498348041}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -21480,8 +20269,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1001 &1958412344
 PrefabInstance:
@@ -21560,11 +20348,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1546362491}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -21575,8 +20358,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1001 &1967341668
 PrefabInstance:
@@ -21655,11 +20437,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 368564088}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -21670,8 +20447,7 @@ PrefabInstance:
       propertyPath: attack
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1001 &1972259980
 PrefabInstance:
@@ -21750,11 +20526,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 518260126}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -21765,8 +20536,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &1975400479
 GameObject:
@@ -22025,7 +20795,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -22119,7 +20889,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -22449,29 +21219,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001958160}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2006298536 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1653988800}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2006298537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006298536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &2020131251
 GameObject:
   m_ObjectHideFlags: 0
@@ -22642,11 +21389,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1157705779}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -22657,55 +21399,8 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
---- !u!1 &2039697005 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 995698700}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2039697006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039697005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
---- !u!1 &2045528743 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1701861291}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2045528744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045528743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1001 &2051803665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22783,11 +21478,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1298781740}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -22798,8 +21488,7 @@ PrefabInstance:
       propertyPath: attack
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &2051803666 stripped
 GameObject:
@@ -22807,52 +21496,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2051803665}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2058531947 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1705353636}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2058531948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2058531947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
---- !u!1 &2066586515 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1350456966}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2066586516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066586515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &2074829403
 GameObject:
   m_ObjectHideFlags: 0
@@ -23100,11 +21743,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 746493502}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -23115,8 +21753,7 @@ PrefabInstance:
       propertyPath: attack
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
 --- !u!1 &2087828222
 GameObject:
@@ -23161,7 +21798,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -23212,29 +21849,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087828222}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2099238418 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8027994541630774374, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 659737709}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2099238419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2099238418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8535c2f6d83d28b4bb6ae6befbe208e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 292901896}
-  rb: {fileID: 0}
-  hp: 30
-  attack: 3
-  speed: 1.5
 --- !u!1 &2108163029
 GameObject:
   m_ObjectHideFlags: 0
@@ -23696,11 +22310,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 760977779}
-    - target: {fileID: 8027994541146738057, guid: 8e57e6a4593d44f4db8b32ea370892b5,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 424633434}
     - target: {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5,
         type: 3}
       propertyPath: player
@@ -23711,6 +22320,5 @@ PrefabInstance:
       propertyPath: attack
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8027994541630774297, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e57e6a4593d44f4db8b32ea370892b5, type: 3}
