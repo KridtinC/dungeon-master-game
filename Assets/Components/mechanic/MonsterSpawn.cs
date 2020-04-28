@@ -5,20 +5,20 @@ using UnityEngine;
 public class MonsterSpawn : MonoBehaviour
 {
     //public PlayerController player;
-    public EnemyController fe;
+    public MonsterWeak fe;
     public int maxSpawn = 3;
-    private EnemyController[] enemy;
+    private MonsterWeak[] enemy;
     private int deadCount = 0;
     // Start is called before the first frame update
     void Start()
     {
-        enemy = new EnemyController[maxSpawn];
+        enemy = new MonsterWeak[maxSpawn];
         //enemy[0] = fe;
         for (int i = 0; i < maxSpawn; ++i)
         {
             if (enemy[i] == null || enemy[i].gameObject == null)
             {
-                EnemyController newEnemy = Instantiate(fe);
+                MonsterWeak newEnemy = Instantiate(fe);
                 newEnemy.gameObject.SetActive(true);
                 newEnemy.transform.position = new Vector3(this.transform.position.x + Random.Range(-1f, 1f), 1, this.transform.position.z + Random.Range(-1f, 1f));
 
@@ -40,7 +40,7 @@ public class MonsterSpawn : MonoBehaviour
         {
             print(deadCount);
             deadCount = 0;
-            StartCoroutine(ExecuteAfterTime(3f));
+            StartCoroutine(ExecuteAfterTime(15f));
 
         }
     }
@@ -59,7 +59,7 @@ public class MonsterSpawn : MonoBehaviour
         {
             if (enemy[i] == null || enemy[i].gameObject == null)
             {
-                EnemyController newEnemy = Instantiate(fe);
+                MonsterWeak newEnemy = Instantiate(fe);
                 newEnemy.gameObject.SetActive(true);
                 newEnemy.transform.position = new Vector3(this.transform.position.x + Random.Range(-1f, 1f), 1, this.transform.position.z + Random.Range(-1f, 1f));
 
