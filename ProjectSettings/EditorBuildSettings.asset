@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LaserLevelScene.unity
+    guid: 0cfd2761858aec4429d5720b5ff94e99
+  - enabled: 1
+    path: Assets/Scenes/TimedPuzzleScene.unity
+    guid: faa2c2a1e3cd665469682b77c6b88c2d
+  - enabled: 1
+    path: Assets/Scenes/EarthScene.unity
+    guid: b11c1765f0cab0043af066e715f66580
+  - enabled: 1
+    path: Assets/Scenes/PScene.unity
+    guid: 564e991a3a79477408464fb99632617f
+  - enabled: 1
+    path: Assets/Scenes/BossScene.unity
+    guid: 53b046d42e75bdb2794278214ed6a845
   m_configObjects: {}

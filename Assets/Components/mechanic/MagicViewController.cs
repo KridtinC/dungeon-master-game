@@ -61,7 +61,7 @@ public class MagicViewController : ItemController
         {
             GUI.TextArea(new Rect(100, 50, 200, 100), text);
         }
-        if (!player.getMovable())
+        if (!player.getMovable()&&player.GetHP()>0)
         {
             GUI.TextArea(new Rect(300, 300, 200, 50), "Press Q to Move again");
         }
