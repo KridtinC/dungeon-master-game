@@ -6,13 +6,9 @@ public class DelayedFakeFloor : MonoBehaviour
 {
     public PlayerController player;
     protected bool isStep = false;
-    protected Vector3 startPosition;
-    public LevelController level;
     // Start is called before the first frame update
     void Start()
     {
-        startPosition = transform.position;
-
 
     }
 
@@ -21,13 +17,6 @@ public class DelayedFakeFloor : MonoBehaviour
     {
         if (isStep)
           StartCoroutine(ExecuteAfterTime(2f));
-
-        if (level.getRespawn())
-        {
-            isStep = false;
-            moveUp();
-            level.setRespawn();
-        }
     }
 
     IEnumerator ExecuteAfterTime(float time)
@@ -35,7 +24,7 @@ public class DelayedFakeFloor : MonoBehaviour
         yield return new WaitForSeconds(time);
 
         // Code to execute after the delay
-        transform.Translate(Vector3.down * Time.deltaTime * 3, Space.World);
+        gameObject.SetActive(false);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -44,18 +33,5 @@ public class DelayedFakeFloor : MonoBehaviour
         {
             isStep = true;
         }
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-        isStep = false;
-    }
-
-    public void moveUp()
-    {
-        while (gameObject.transform.position.y < 0)
-        {
-            transform.Translate(Vector3.up * Time.deltaTime * 10, Space.World);
-        }
-
     }
 }
