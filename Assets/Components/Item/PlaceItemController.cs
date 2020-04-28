@@ -21,17 +21,17 @@ public class PlaceItemController : MonoBehaviour
         {
             if (dist <= minDist && player.GetInventory().Count > 0)
             {
-                if(Input.GetKey(KeyCode.E) && !isSelectingItem)
+                if(Input.GetKeyDown(KeyCode.E) && !isSelectingItem)
                     isSelectingItem = true;
-                if (Input.GetKey(KeyCode.DownArrow) && itemIndex < player.GetInventory().Count - 1 && isSelectingItem)
+                if (Input.GetKeyDown(KeyCode.DownArrow) && itemIndex < player.GetInventory().Count - 1 && isSelectingItem)
                 {
                     itemIndex += 1;
                 }
-                if (Input.GetKey(KeyCode.UpArrow) && itemIndex > 0 && isSelectingItem)
+                if (Input.GetKeyDown(KeyCode.UpArrow) && itemIndex > 0 && isSelectingItem)
                 {
                     itemIndex -= 1;
                 }
-                if (Input.GetKey(KeyCode.Space) && isSelectingItem)
+                if (Input.GetKeyDown(KeyCode.Space) && isSelectingItem)
                 {
                     player.OnPlaceItem(itemIndex, this);
                     isPlaced = true;

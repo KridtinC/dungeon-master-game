@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 
-public class DoorScript : MonoBehaviour
+public class DoorScript_1 : MonoBehaviour
 {
     public PlayerController player;
     public string Door_key = "";
