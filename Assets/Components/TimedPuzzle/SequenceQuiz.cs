@@ -72,7 +72,7 @@ public class SequenceQuiz : MonoBehaviour{
   	void OnGUI(){
       if(time.timeRun && !puzzle.completed){
         if (dist <= minDist){
-          GUI.TextArea(new Rect(200, 200, 200, 50), "press 'R' nearby pi''ar by following order "
+          GUI.TextArea(new Rect(200, 200, 200, 50), "press 'R' nearby number's pillar by following order "
           +string.Join(",", seq0.ToArray())+"\n"+string.Join(",", seq1.ToArray()));
           }
         else if (dist1 <= minDist){

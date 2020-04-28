@@ -6,7 +6,7 @@ public class ActivatorController : MonoBehaviour{
   public PlayerController player;
 	private float dist;
 	private float minDist = 2f;
-	private string text = "Press 'F' to activate timer and read riddle";
+	private string text = "Press 'F' to activate timer. Then, go to read riddle at 'Capsule'";
   public TimeController time;
   public GameObject button;
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class ActivatorController : MonoBehaviour{
     }
     void OnGUI(){
     if (dist <= minDist){
-      GUI.TextArea(new Rect(50, 100, 100, 50), text);
+      GUI.TextArea(new Rect(50, 100, 150, 50), text);
       }
     }
 }
