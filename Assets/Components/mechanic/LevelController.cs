@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     public PlayerController player;
+    protected bool isRespawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +18,12 @@ public class LevelController : MonoBehaviour
         if (player.GetHP() <= 0)
         {
             player.setUnmove();
-            //RestartAfterTime(3f);
-            Restart();
+            StartCoroutine(RestartAfterTime(3f));
+            //Restart();
         }
         if (player.transform.position.y < -10)
         {
+            isRespawn = true;
             Respawn();
         }
         
@@ -38,7 +40,7 @@ public class LevelController : MonoBehaviour
 
     void Respawn()
     {
-        player.gameObject.transform.position = new Vector3(0,1,0);
+        player.gameObject.transform.position = new Vector3(15f,1,65.08f);
     }
 
     void Restart()
@@ -46,7 +48,17 @@ public class LevelController : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(3);
     }
 
-    IEnumerator ExecuteAfterTime(float time)
+    public void setRespawn()
+    {
+        isRespawn = false;
+    }
+
+    public bool getRespawn()
+    {
+        return isRespawn;
+    }
+
+    IEnumerator RestartAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
 
