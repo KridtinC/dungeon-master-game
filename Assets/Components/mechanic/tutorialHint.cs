@@ -26,7 +26,7 @@ public class tutorialHint : MonoBehaviour
     {
         if (dist <= minDist)
         {
-            GUI.TextArea(new Rect(100, 150, 200, 50), hintText);
+            GUI.TextArea(new Rect((0.1f * Screen.width), (0.7f * Screen.height), 200, 50), hintText);
         }
     }
 }

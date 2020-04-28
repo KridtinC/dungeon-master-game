@@ -102,7 +102,7 @@ void checkCorrectKey()
             {
                 if (!isPlaced && !isSelectingItem)
                 {
-                    GUI.TextArea(new Rect(100, 50, 200, 100), text);
+                    GUI.TextArea(new Rect(Screen.width * 0.125f, Screen.height * 0.175f, 200, 100), text);
                 }
                 else if (isSelectingItem)
                 {
@@ -114,7 +114,7 @@ void checkCorrectKey()
                             inv += "> ";
                         inv += "- " + inventory[i].name + "\n";
                     }
-                    GUI.TextArea(new Rect(100, 50, 200, 100), "Select and press spacebar to place:\n" + inv);
+                    GUI.TextArea(new Rect(Screen.width * 0.125f, Screen.height * 0.175f, 200, 100), "Select and press spacebar to place:\n" + inv);
                 }
             }
         }

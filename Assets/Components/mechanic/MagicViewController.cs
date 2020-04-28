@@ -63,7 +63,7 @@ public class MagicViewController : ItemController
         }
         if (!player.getMovable()&&player.GetHP()>0)
         {
-            GUI.TextArea(new Rect(300, 300, 200, 50), "Press Q to Move again");
+            GUI.TextArea(new Rect((0.1f * Screen.width)+200, (0.7f * Screen.height), 200, 50), "Press Q to Move again");
         }
     }
 }

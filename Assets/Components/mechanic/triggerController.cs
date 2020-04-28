@@ -56,7 +56,7 @@ public class triggerController : MonoBehaviour
     {
         if (dist <= minDist && !isTrigged)
         {
-                GUI.TextArea(new Rect(100, 50, 200, 100), text);
+                GUI.TextArea(new Rect(Screen.width * 0.125f, Screen.height * 0.175f, 200, 100), text);
         }
     }
     

@@ -37,6 +37,11 @@ public class PlayerController : MonoBehaviour
             Move();
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
     }
 
     private void Move()
