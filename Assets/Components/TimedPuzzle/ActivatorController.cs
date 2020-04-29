@@ -23,7 +23,7 @@ public class ActivatorController : MonoBehaviour{
     }
     void OnGUI(){
     if (dist <= minDist){
-      GUI.TextArea(new Rect(50, 100, 150, 50), text);
+      GUI.TextArea(new Rect(Screen.width * 0.125f, Screen.width * 0.125f, 150, 50), text);
       }
     }
 }

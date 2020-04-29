@@ -17,7 +17,7 @@ public class StairLevel : MonoBehaviour{
 		}
   void OnGUI(){
 		if (dist <= minDist){
-    	GUI.TextArea(new Rect(100, 50, 200, 100), "Press Spacebar to move to next level");
+    	GUI.TextArea(new Rect(Screen.width * 0.125f, Screen.width * 0.125f, 200, 100), "Press Spacebar to move to next level");
 			}
 		}
 }

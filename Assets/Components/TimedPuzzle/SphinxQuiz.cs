@@ -60,17 +60,17 @@ public class SphinxQuiz : MonoBehaviour{
 	void OnGUI(){
 		if(time.timeRun && !puzzle.completed){
 			if (dist <= minDist){
-				GUI.TextArea(new Rect(200, 200, 200, 100),"What can bring back the dead; make you cry, make you laugh, make you young; "
+				GUI.TextArea(new Rect(Screen.width * 0.125f, Screen.width * 0.125f, 200, 100),"What can bring back the dead; make you cry, make you laugh, make you young; "
 				+ "is born in an instant, yet lasts a lifetime. Press 'R' near a pillar to Answer.");
 				}
 			else if (distA <= minDist){
-				GUI.TextArea(new Rect(100, 100, 60, 30), A1);
+				GUI.TextArea(new Rect(Screen.width * 0.125f, Screen.width * 0.125f, 60, 30), A1);
 				}
 			else if (distB <= minDist){
-				GUI.TextArea(new Rect(100, 100, 60, 30), A2);
+				GUI.TextArea(new Rect(Screen.width * 0.125f, Screen.width * 0.125f, 60, 30), A2);
 				}
 			else if (distC <= minDist){
-				GUI.TextArea(new Rect(100, 100, 60, 30), A3);
+				GUI.TextArea(new Rect(Screen.width * 0.125f, Screen.width * 0.125f, 60, 30), A3);
 				}
 			}
 		}
